@@ -1,40 +1,49 @@
 <!doctype html>
-<html lang = “en”>
-
+<html lang="en">
 <head>
-<meta charset=“utf-8”>
-<link href="MY FONT URL GOES HERE" rel="stylesheet">
-<link rel="stylesheet" href="./style.css">
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>Deetya's Website</title>
+</head>
 
-<title>My Name</title>
-</head> 
+<body>
+  <header>
+    <h1>Deetya Kamat</h1>
+  </header>
 
+  <!-- MAIN SECTION: sidebar + cards side by side -->
+  <main class="content">
+    <aside class="sidebar">
+      <ul>
+        <li><a href="bio.html">Bio</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </aside>
 
-<header>
-<h1>Name</h1>
-</header>
-
-
-<main>
-    <div class="card-container">
-        <a href="bio.html" class="card">
+    <section class="card-container">
+      <a href="bio.html" class="card">
         <img src="images/bio.jpg" alt="Bio">
         <div class="card-title">Bio</div>
-        </a>
+      </a>
 
-        <a href="projects.html" class="card">
+      <a href="projects.html" class="card">
         <img src="images/projects.jpg" alt="Projects">
         <div class="card-title">Projects</div>
-        </a>
+      </a>
 
-        <a href="contact.html" class="card">
+      <a href="contact.html" class="card">
         <img src="images/contact.png" alt="Contact">
         <div class="card-title">Contact Me</div>
-        </a>
-    </div>
-<script src="script.js"></script>
-</main>
-<footer>
- <p> 2025 © Deetya Kamat
-</footer>
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>2025 © Deetya Kamat</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
