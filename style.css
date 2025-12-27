@@ -6,7 +6,8 @@ body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   color: #f6f2ec;
-  background-color: #000000;
+  background-color: #050030;
+
 }
 
 /* HEADER */
@@ -14,7 +15,7 @@ header {
   text-align: center;
   padding: 1.5rem;
   border-bottom: 1px solid #ddd;
-  background-color: #000000;
+  background-color: #050030;
 }
 
 h1 {
@@ -23,7 +24,7 @@ h1 {
   margin: 0;
 }
 
-/* MAIN CONTENT AREA */
+/* MAIN CONTENT */
 .content {
   display: flex;
   flex-direction: row;
@@ -40,7 +41,7 @@ h1 {
   height: fit-content;
   position: sticky;
   top: 1rem;
-  background-color: #000000;
+  background-color: #050030;
 }
 
 .sidebar h2 {
@@ -66,13 +67,13 @@ h1 {
 }
 
 .sidebar a:hover {
-  color: rgb(0, 0, 0);
+  color: #e9d8ff;
 }
 
 /* CARD CONTAINER */
 .card-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); 
+  grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
   gap: 2rem;
   justify-items: center;
   width: 100%;
@@ -87,7 +88,7 @@ h1 {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   opacity: 0;
-  background-color: rgb(251, 184, 211)rgb(170, 5, 71);
+  background-color: #d5b8fb;
   color: #f6f2ec;
   transform: translateY(20px);
   transition: opacity 0.6s ease, transform 0.6s ease;
@@ -113,8 +114,8 @@ h1 {
 }
 
 .parasol-card img {
-  object-fit: cover;       /* keeps the image filling the card */
-  object-position: top center; /* focus on the top (the head) */
+  object-fit: cover;
+  object-position: top center;
 }
 
 .card:hover img {
@@ -137,10 +138,25 @@ footer {
   text-align: center;
   padding: 10px;
   border-top: 1px solid #ddd;
-  background-color: #000000;
+  background-color: #050030;
   margin-top: 2rem;
 }
 
+nav {
+  text-align: left;
+}
+
+nav a {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+nav a:hover {
+  font-weight: 700;
+  color: #e9d8ff;
+}
+
+/* RESPONSIVE */
 @media (max-width: 900px) {
   .content {
     flex-direction: column;
@@ -158,6 +174,22 @@ footer {
   }
 }
 
+table {
+  color: white;
+  border: white;
+  width: 100%;
+}
+
+table a {
+  font-weight: 600;
+  color: #e6ccff;
+}
+
+table a:hover {
+  color: #cea9ff;
+}
+
+/* Theme Toggle Button - not implemented yet */
 #theme-toggle {
   background: none;
   border: none;
@@ -172,3 +204,128 @@ footer {
 #theme-toggle:hover {
   transform: scale(1.2);
 }
+
+#contact a {
+  color: #e6ccff;
+}
+
+#contact a:hover {
+  color: #cea9ff;
+}
+
+#bio {
+  padding: 1rem 1.5rem;
+}
+
+#bio p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+#bio img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+#contact, #books {
+  padding: 1rem 1.5rem;
+}
+
+#contact .no-bullets {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: large; 
+}
+
+#contact .no-bullets li {
+  margin: 8px 0;
+}
+
+/* Books */
+#books {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.highlight {
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  margin-bottom: 30px;
+  background-color: #d5b8fb;
+  color: #050030;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+#featured-book {
+  font-size: 1.1em;
+  margin-top: 5px;
+}
+
+#book-filter {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#time-filter {
+  background-color: #d5b8fb;
+  color: #050030;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+#book-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  justify-items: stretch;
+  align-items: start;
+}
+
+/* Book Cards */
+.book-card {
+  overflow: hidden;
+  width: 100%;
+  min-height: 220px;
+  max-width: 320px;
+  justify-self: center;
+  background-color: #f2f2f2;
+  color: #050030;
+  border-radius: 15px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.6s ease;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Match fade-in animation from .card */
+.book-card.show {
+  opacity: 1;
+  transform: translateY(0) scale(1.01);
+}
+
+.book-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 8px rgba(233, 216, 255, 0.6);
+}
+
+.book-card h4 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.book-card p {
+  font-size: 1rem;
+  color: #1b0139;
+}
+
