@@ -123,3 +123,4 @@ function filterBooks() {
 // Initialize
 filterSelect.addEventListener("change", filterBooks);
 loadBooks(); // default display
+
