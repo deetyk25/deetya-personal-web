@@ -28,14 +28,16 @@
         <section id="book-filter">
             <h3>Filter Books</h3>
             <select id="time-filter">
+                <option value="all">All Books</option>
                 <option value="this-month">This Month</option>
                 <option value="this-year">This Year</option>
                 <option value="specific-time">Choose Month / Year</option>
-                <option value="all">All Books</option>
-                </select>
+            </select>
+            <input type="month" id="month-picker" style="display:none;">
+
 
             <select id="sort-order">
-                <option value="date-desc" selected>Newest First</option>
+                <option value="date-desc">Newest First</option>
                 <option value="date-asc">Oldest First</option>
                 <option value="rating-desc">Highest Rating</option>
                 <option value="rating-asc">Lowest Rating</option>

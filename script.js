@@ -9,7 +9,13 @@ const observer = new IntersectionObserver(entries => {
 // Observe any static .card elements (home page)
 document.querySelectorAll(".card").forEach(card => observer.observe(card));
 
+// books
 let books = [];
+
+const bookList = document.getElementById("book-list");
+const monthPicker = document.getElementById("month-picker");
+const filterSelect = document.getElementById("time-filter");
+const sortSelect = document.getElementById("sort-order");
 
 async function loadBooks() {
   const res = await fetch("books2025.json");
@@ -32,10 +38,6 @@ function setupBookOfMonth() {
 }
 
 
-const bookList = document.getElementById("book-list");
-const monthPicker = document.getElementById("month-picker");
-const filterSelect = document.getElementById("time-filter");
-const sortSelect = document.getElementById("sort-order");
 sortSelect.addEventListener("change", filterBooks);
 
 filterSelect.addEventListener("change", () => {
@@ -74,53 +76,6 @@ function renderBooks(filteredBooks) {
   });
 }
 
-
-// function filterBooks() {
-//   const filter = filterSelect.value;
-//   const sortOrder = sortSelect.value;
-//   const now = new Date();
-//   let filtered = books;
-
-//   if (filter === "this-month") {
-//     filtered = books.filter(book => {
-//       const date = parseDate(book.date);
-//       return date.getMonth() === now.getMonth() && date.getFullYear() === now.getFullYear();
-//     });
-//   } else if (filter === "last-3-months") {
-//     const threeMonthsAgo = new Date();
-//     threeMonthsAgo.setMonth(threeMonthsAgo.getMonth() - 3);
-//     filtered = books.filter(book => parseDate(book.date) >= threeMonthsAgo);
-//   } else if (filter === "this-year") {
-//     filtered = books.filter(book => parseDate(book.date).getFullYear() === now.getFullYear());
-//   } else if (filter === "2025") {
-//     filtered = books.filter(book => parseDate(book.date).getFullYear() === 2025);
-//   } else if (filter === "specific-time") {
-//     if (monthPicker.value) {
-//       const [year, month] = monthPicker.value.split("-").map(Number);
-//       const selected = new Date(year, month - 1, 1); // month-1 because JS months are 0-indexed
-//       filtered = books.filter(book => {
-//         const date = parseDate(book.date);
-//         return date.getMonth() === selected.getMonth() && date.getFullYear() === selected.getFullYear();
-//       });
-//     } else {
-//       filtered = []; // no month selected yet
-//     }
-//   }
-
-//   // Sort by date
-//   filtered.sort((a, b) => {
-//     if (sortOrder.startsWith("date")) {
-//       const diff = parseDate(a.date) - parseDate(b.date);
-//       return sortOrder === "date-asc" ? diff : -diff;
-//     } else if (sortOrder.startsWith("rating")) {
-//       const diff = (a.rating || 0) - (b.rating || 0); // default 0 if no rating
-//       return sortOrder === "rating-asc" ? diff : -diff;
-//     }
-//   });
-
-//   renderBooks(filtered);
-// }
-
 function filterBooks() {
   const filter = filterSelect.value;
   const sortOrder = sortSelect.value;
@@ -158,8 +113,6 @@ function filterBooks() {
     }
   }
 
-  // "all" → no filtering needed
-
   // Sorting
   filtered.sort((a, b) => {
     if (sortOrder === "date-asc") {
@@ -182,6 +135,5 @@ function filterBooks() {
 
 
 // Initialize
-filterSelect.addEventListener("change", filterBooks);
 loadBooks(); // default display
 
