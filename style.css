@@ -230,6 +230,19 @@ table a:hover {
   border-radius: 10px;
 }
 
+#bio .bio-image-container {
+  padding-top: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+#bio .bio-image-container img {
+  width: auto;
+  height: 200px;
+  object-fit: contain;
+}
+
 #contact, #books {
   padding: 1rem 1.5rem;
 }
