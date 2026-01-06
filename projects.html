@@ -19,68 +19,126 @@
         </nav>
     </header>
 
-    <main>
-        <table border="5">
-        <tr>
-            <th>Project Name</th>
-            <th>Project Description</th>
-            <th>Project Language(s)</th>
-            <th>Date</th>
-        </tr>
-        <tr> 
-            <td><a href="https://github.com/deetyk25/genomic-expression-visualizer">Genomic Expression Visualizer </a></td> 
-            <td>This project explores gene expression data through visualization and basic preprocessing. The goal is to better understand how computational choices (filtering, normalization) affect biological signal interpretation.</td> 
-            <td>Python, Jupyter Notebooks</td>
-            <td>December 2025 - Ongoing</td>
-        </tr>
-        <tr> 
-            <td><a href="https://github.com/nguyenchristy/designify">Designify </a></td> 
-            <td>Collaborated with two teammates to create Designify, an app leveraging Gemini API and made with React to generate interior imagery that optimizes itself based on the user's request.</td> 
-            <td>TypeScript, JavaScript, React, Gemini API</td>
-            <td>October 2025 - Ongoing</td>
-        </tr>
-        <tr> 
-            <td><a href="https://github.com/deetyk25/deetya-personal-web">Personal Website </a></td> 
-            <td>Coded and designed a portfolio website using HTML, CSS, and JavaScript.</td> 
-            <td>HTML, CSS, JavaScript</td>
-            <td>September - October 2025</td>
-        </tr>
-        <tr> 
-            <td><a href="https://github.com/deetyk25/Expense-Manager-System">Expense Manager System </a></td> 
-            <td>Developed a full-stack web application with Git for version control for tracking and categorizing personal expenses
-with Express.js and React. Integrated MongoDB database and data visualization features to provide real-time spending insights and scalable
-data handling.</td> 
-            <td>React, Express, MongoDB</td>
-            <td>August 2025</td>
-        </tr>
-        <tr> 
-            <td><a href="https://github.com/deetyk25/spotify-ml-recommender">Spotify Recommender </a></td> 
-            <td>Integrated Spotify API to analyze listening patterns and generate custom recommendations. Built data pipelines to extract audio features for recommendations. Developing clustering-based recommendation algorithms to generate personalized recommendations for sample
-users.</td> 
-            <td>Python, Spotify API</td>
-            <td>July 2025 - Ongoing</td>
-        </tr>
-        <tr> 
-            <td><a>Multi-Threaded Web Server (CSE 333 Project)</a></td> 
-            <td>Designed and implemented a scalable query-based search engine with efficient file indexing, memory management,
-and multithreaded concurrency. Optimized data structures for efficiency, gaining hands-on experience with systems programming concepts such
-as synchronization and dynamic memory handling.</td> 
-            <td>C, C++, POSIX</td>
-            <td>April 2025 - August 2025</td>
-        </tr>
-        <tr> 
-            <td><a href="https://github.com/deetyk25/file-management-system-mock">File Management System </a></td> 
-            <td>Leverages JavaScript and the Google Drive API to efficiently manage files. Implemented and integrated OAuth 2.0 for secure access while testing.</td> 
-            <td>JavaScript</td>
-            <td>July 2024</td>
-        </tr>
-        <tr> 
-            <td><a href="https://github.com/deetyk25/connect4-fullstack">Connect4 Application </a></td> 
-            <td>Designed a full-stack Connect4 application using Java and JavaSwing. Recognizes vertical, horizontal, and diagonal wins.</td> 
-            <td>Java, JavaSwing</td>
-            <td>June 2023</td>
-        </tr>
-    </table>
+    <main id="projects">
+    <section class="projects-card-container">
+        <div class="projects-card">
+            <img src="images/bio.jpeg" alt="Genomic Expression Visualizer">
+            <div class="card-content">
+                <div class="text-inner">
+                    <h3><a href="https://github.com/deetyk25/genomic-expression-visualizer" target="_blank">Genomic Expression Visualizer</a></h3>
+                    <p class="languages">Python, Jupyter Notebooks</p>
+                    <p class="date">Dec 2025 - Ongoing</p>
+                    <p class="description">
+                        Explores gene expression data through visualization and basic preprocessing.
+                        Aims to understand how computational choices affect biological signal interpretation.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects-card">
+            <img src="images/monet_chrys.jpg" alt="Designify">
+            <div class="card-content">
+                    <div class="text-inner">
+                    <h3><a href="https://github.com/nguyenchristy/designify" target="_blank">Designify</a></h3>
+                    <p class="languages">TypeScript, JavaScript, React, Gemini API</p>
+                    <p class="date">Oct 2025 - Ongoing</p>
+                    <p class="description">
+                        Collaborated with teammates to create an app leveraging Gemini API to generate interior imagery.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects-card">
+            <img src="images/projects.jpg" alt="Personal Website">
+            <div class="card-content">
+                <div class="text-inner">
+                    <h3><a href="https://github.com/deetyk25/deetya-personal-web" target="_blank">Personal Website</a></h3>
+                    <p class="languages">HTML, CSS, JavaScript</p>
+                    <p class="date">September 2025 - Ongoing</p>
+                    <p class="description">
+                        Coded and designed a portfolio website using HTML, CSS, and JavaScript.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects-card">
+            <img src="images/books.jpg" alt="Expense Manager System">
+            <div class="card-content">
+                <div class="text-inner">
+                <h3><a href="https://github.com/deetyk25/Expense-Manager-System" target="_blank">Expense Manager System</a></h3>
+                    <p class="languages">React, Express, MongoDB</p>
+                    <p class="date">August 2025</p>
+                    <p class="description">
+                        Developed a full-stack web application with Git for version control for tracking and categorizing personal expenses
+    with Express.js and React. Integrated MongoDB database and data visualization features to provide real-time spending insights and scalable
+    data handling.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects-card">
+            <img src="images/sailboat.JPG" alt="Spotify Recommender">
+            <div class="card-content">
+                <div class="text-inner">
+                    <h3><a href="https://github.com/deetyk25/spotify-ml-recommender" target="_blank">Spotify Recommender</a></h3>
+                    <p class="languages">Python, Spotify API</p>
+                    <p class="date">July 2025 - Ongoing</p>
+                    <p class="description">
+                        Integrated Spotify API to analyze listening patterns and generate custom recommendations. Built data pipelines to extract audio features for recommendations. Developing clustering-based recommendation algorithms to generate personalized recommendations for sample
+    users.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects-card">
+            <img src="images/coffee.jpeg" alt="Multi-Threaded Web Server (CSE 333 Project)">
+            <div class="card-content">
+                <div class="text-inner">
+                <h3><a href="https://github.com/deetyk25/deetya-personal-web" target="_blank">Multi-Threaded Web Server (CSE 333 Project)</a></h3>
+                    <p class="languages">C, C++, POSIX</p>
+                    <p class="date">April 2025 - August 2025</p>
+                    <p class="description">
+                        Designed and implemented a scalable query-based search engine with efficient file indexing, memory management,
+    and multithreaded concurrency. Optimized data structures for efficiency, gaining hands-on experience with systems programming concepts such
+    as synchronization and dynamic memory handling.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects-card">
+            <img src="images/contact.jpg" alt="File Management System">
+            <div class="card-content">
+                <div class="text-inner">
+                    <h3><a href="https://github.com/deetyk25/file-management-system-mock" target="_blank">File Management System</a></h3>
+                    <p class="languages">JavaScript</p>
+                    <p class="date">July 2024</p>
+                    <p class="description">
+                        Leverages JavaScript and the Google Drive API to efficiently manage files. Implemented and integrated OAuth 2.0 for secure access while testing.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="projects-card">
+            <img src="images/monet_chrys.jpg" alt="Connect4">
+            <div class="card-content">
+                <div class="text-inner">
+                    <h3><a href="https://github.com/deetyk25/connect4-fullstack" target="_blank">Connect4 Application</a></h3>
+                    <p class="languages">Java, JavaSwing</p>
+                    <p class="date">June 2023</p>
+                    <p class="description">
+                        Designed a full-stack Connect4 application using Java and JavaSwing. Recognizes vertical, horizontal, and diagonal wins.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
     </main>
 </body>
 </html>
