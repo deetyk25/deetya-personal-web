@@ -10,7 +10,7 @@ body {
 
 }
 
-/* HEADER */
+/* Header */
 header {
   text-align: center;
   padding: 1.5rem;
@@ -24,7 +24,7 @@ h1 {
   margin: 0;
 }
 
-/* MAIN CONTENT AREA */
+/* Main */
 .content {
   display: flex;
   flex-direction: row;
@@ -34,7 +34,7 @@ h1 {
   padding: 2rem;
 }
 
-/* SIDEBAR */
+/* Sidebar */
 .sidebar {
   padding: 1rem;
   width: 20%;
@@ -70,10 +70,10 @@ h1 {
   color: #e9d8ff;
 }
 
-/* CARD CONTAINER */
+/* Card container */
 .card-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   justify-items: center;
   width: 100%;
@@ -133,7 +133,7 @@ h1 {
   font-weight: 600;
 }
 
-/* FOOTER */
+/* Footer */
 footer {
   text-align: center;
   padding: 10px;
@@ -156,7 +156,7 @@ nav a:hover {
   color: #e9d8ff;
 }
 
-/* RESPONSIVE */
+/* Responsiveness */
 @media (max-width: 900px) {
   .content {
     flex-direction: column;
@@ -174,37 +174,7 @@ nav a:hover {
   }
 }
 
-table {
-  color: white;
-  border: white;
-  width: 100%;
-}
-
-table a {
-  font-weight: 600;
-  color: #e6ccff;
-}
-
-table a:hover {
-  color: #cea9ff;
-}
-
-/* Theme Toggle Button - not implemented yet */
-#theme-toggle {
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-  position: absolute;
-  right: 2rem;
-  top: 1.5rem;
-  transition: transform 0.3s ease;
-}
-
-#theme-toggle:hover {
-  transform: scale(1.2);
-}
-
+/* Contact */
 #contact a {
   color: #e6ccff;
 }
@@ -213,6 +183,7 @@ table a:hover {
   color: #cea9ff;
 }
 
+/* Bio */
 #bio {
   padding: 2rem 1.5rem;
 }
@@ -242,6 +213,7 @@ table a:hover {
   object-fit: contain;
 }
 
+/* Contacts */
 #contact, #books {
   padding: 1rem 1.5rem;
 }
@@ -297,8 +269,8 @@ table a:hover {
 #book-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
-  justify-items: stretch;
+  gap: 5rem;
+  justify-items: center;
   align-items: start;
 }
 
@@ -306,7 +278,7 @@ table a:hover {
 .book-card {
   overflow: hidden;
   width: 100%;
-  min-height: 220px;
+  height: 220px;
   max-width: 320px;
   justify-self: center;
   background-color: #f2f2f2;
@@ -320,7 +292,6 @@ table a:hover {
   transform: translateY(20px);
 }
 
-/* Match fade-in animation from .card */
 .book-card.show {
   opacity: 1;
   transform: translateY(0) scale(1.01);
@@ -328,7 +299,7 @@ table a:hover {
 
 .book-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 8px 8px rgba(233, 216, 255, 0.6);
+  box-shadow: 0 4px 4px rgba(233, 216, 255, 0.6);
 }
 
 .book-card h4 {
@@ -342,7 +313,7 @@ table a:hover {
   color: #1b0139;
 }
 
-
+/* Project Cards */
 #projects .projects-card-container {
   display: flex;
   flex-wrap: wrap;
