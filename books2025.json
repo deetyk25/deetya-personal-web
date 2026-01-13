@@ -1,5 +1,11 @@
 [
   {
+    "title": "Beautiful World, Where Are You?",
+    "author": "Sally Rooney",
+    "date": "2026/1/13",
+    "rating": 3.5
+  },
+  {
     "title": "Only Dull People Are Brilliant at Breakfast",
     "author": "Oscar Wilde",
     "date": "2025/12/26",
@@ -21,7 +27,7 @@
     "title": "Heaven",
     "author": "Mieko Kawakami",
     "date": "2025/12/10",
-    "rating": 3
+    "rating": 3.5
   },
   {
     "title": "The Silent Patient",
@@ -45,7 +51,7 @@
     "title": "Book Lovers",
     "author": "Emily Henry",
     "date": "2025/08/29",
-    "rating": 3
+    "rating": 3.5
   },
   {
     "title": "The Trial",
@@ -87,7 +93,7 @@
     "title": "Norwegian Wood",
     "author": "Haruki Murakami",
     "date": "2025/06/18",
-    "rating": 4
+    "rating": 4.5
   },
   {
     "title": "The God of Small Things",
@@ -99,7 +105,7 @@
     "title": "Masters of the Dew",
     "author": "Jacques Roumain",
     "date": "2025/05/13",
-    "rating": 3
+    "rating": 3.5
   },
   {
     "title": "Funny Story",
@@ -123,7 +129,7 @@
     "title": "The Feminist Killjoy Handbook: The Radical Potential of Getting in the Way",
     "author": "Sara Ahmed",
     "date": "2025/03/25",
-    "rating": 4
+    "rating": 4.5
   },
   {
     "title": "Kaikeyi",
@@ -141,7 +147,7 @@
     "title": "Mexican Gothic",
     "author": "Silvia Moreno-Garcia",
     "date": "2025/03/02",
-    "rating": 3
+    "rating": 3.5
   },
   {
     "title": "Pride, Prejudice, and Other Flavors (The Rajes, #1)",
@@ -201,6 +207,6 @@
     "title": "The Stationery Shop",
     "author": "Marjan Kamali",
     "date": "2025/01/02",
-    "rating": 5
+    "rating": 4.5
   }
 ]
