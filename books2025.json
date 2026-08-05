@@ -1,5 +1,47 @@
 [
-   {
+  {
+    "title": "Rouge",
+    "author": "Mona Awad",
+    "date": "2026/7/10",
+    "rating": 3
+  },
+  {
+    "title": "Perfection",
+    "author": "Vincenzo Latronico",
+    "date": "2026/7/6",
+    "rating": 3
+  },
+  {
+    "title": "Vigil",
+    "author": "George Saunders",
+    "date": "2026/7/5",
+    "rating": 3
+  },
+  {
+    "title": "On Earth We're Briefly Gorgeous",
+    "author": "Ocean Vuong",
+    "date": "2026/6/25",
+    "rating": 4.5
+  },
+  {
+    "title": "Small Things Like These",
+    "author": "Claire Keegan",
+    "date": "2026/6/23",
+    "rating": 4
+  },
+  {
+    "title": "In Your Dreams",
+    "author": "Sarah Adams",
+    "date": "2026/6/20",
+    "rating": 3.5
+  },
+  {
+    "title": "The Favorites",
+    "author": "Layne Fargo",
+    "date": "2026/6/18",
+    "rating": 3
+  },
+  {
     "title": "Atonement",
     "author": "Ian McEwan",
     "date": "2026/5/30",
