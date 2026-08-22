@@ -174,15 +174,6 @@ nav a:hover {
   }
 }
 
-/* Contact */
-#contact a {
-  color: #e6ccff;
-}
-
-#contact a:hover {
-  color: #cea9ff;
-}
-
 /* Bio */
 #bio {
   padding: 2rem 1.5rem;
@@ -213,20 +204,60 @@ nav a:hover {
   object-fit: contain;
 }
 
-/* Contacts */
-#contact, #books {
-  padding: 1rem 1.5rem;
+/* Contact */
+
+#contact {
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1.5rem;
 }
 
-#contact .no-bullets {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  font-size: large; 
+.contact-card {
+  width: 100%;
+  max-width: 650px;
+  padding: 2.5rem;
+  border-radius: 15px;
+  background-color: #d5b8fb;
+  color: #050030;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
 }
 
-#contact .no-bullets li {
-  margin: 8px 0;
+.contact-card h2 {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.contact-card p {
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.contact-links a {
+  display: block;
+  width: 80%;
+  padding: 12px 20px;
+  border-radius: 10px;
+  background-color: #050030;
+  color: #f6f2ec !important;
+  text-decoration: none;
+  font-weight: 700;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.contact-links a:hover {
+  color: #050030 !important;
+  background-color: #e9d8ff;
+  transform: translateY(-3px);
 }
 
 /* Books */
